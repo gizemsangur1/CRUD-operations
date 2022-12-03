@@ -1,17 +1,18 @@
 html,body{
     max-width: 100%;
     min-height: 100%;
+
 }
-/*Home page*/
+/*Index page*/
 .row{
     height: 100vh;
 }
-a:link{
+a:link,a:visited{
     text-decoration: none;
+    color: black;
 }
 .create-note{
     border-radius: 5px;
-    background-color: aqua;
     object-fit: contain;
     text-align: center;
     width: 150px;
@@ -19,11 +20,10 @@ a:link{
     font-size: 30px;
     position: relative;
     left: 35%;
-    top: 35%;
+    top: 25%;
 }
 .notes{
     border-radius: 5px;
-    background-color: aqua;
     object-fit: contain;
     text-align: center;
     width: 150px;
@@ -31,17 +31,110 @@ a:link{
     font-size: 30px;
     position: relative;
     left: 35%;
-    top: 35%;
+    top: 25%;
+}
+#pic1{
+    position: relative;
+    left: 65%;
+    top: 20%;
+    width: 250px;
+   
 }
 /*taking note page*/
 #form{
     position: absolute;
-    top: 50%;
-    left: 35%;
+    left: 55%;
 
 }
 #formcol{
     height: 100vh;
     
 }
-#note
+textarea{
+    background-color: transparent;
+
+}
+
+
+#savebtn{
+    width: 120px;
+    height: 55px;
+    font-size: 25px;
+    background: #2547a1;
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 60px;
+    box-shadow: 6px 0px 0px;
+    outline: transparent;
+    position: relative;
+    
+}
+#savebtn::after {
+    content: 'SAVE';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #2547a1 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+#savebtn:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+    }
+
+    @keyframes glitch {
+    0% {
+        transform: translate(-20px, -10px);
+    }
+    10% {
+        transform: translate(10px, 10px);
+    }
+    20% {
+        transform: translate(-10px, 10px);
+    }
+    30% {
+         transform: translate(0px, 5px);
+    }
+    40% {  
+        transform: translate(-5px, 0px);
+    }
+    50% {    
+        transform: translate(5px, 0px);
+    }
+    60% { 
+        transform: translate(5px, 10px);
+    }
+    70% {  
+        transform: translate(-10px, 10px);
+    }
+    80% {
+        transform: translate(20px, -10px);
+    }
+    90% {
+        transform: translate(-10px, 0px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+#gif3{
+    position: absolute;
+    top: 85%;
+    left: 90%;
+    width: 100px;
+    border-radius: 5px;
+    z-index: 1;
+}
+#pic3{
+    position: absolute;
+    left: 13%;
+    top: 12%;
+    width: 400px;
+}

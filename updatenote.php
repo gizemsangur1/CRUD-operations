@@ -22,13 +22,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TAKE A NOTE</title>
+    <title>UPDATE THE NOTE</title>
 </head>
 <body>
     <div class="row">
         <div  class="col-sm-12"  id="formcol">
             <form action="" method="post" id="form">
-                <input type="text" name="note" id="note">
+                <textarea name="note" cols="40" rows="5"></textarea><br>
                 <input  type="submit" id="save" value="save" name="save"/>
             </form>
         </div>
