@@ -3,13 +3,13 @@
    $show=pg_query("SELECT*FROM notes");
     if(isset($_POST["save"])&&$_POST["save"]=="save")
     {
-        $note=$_POST["note"]
+        $note=$_POST["note"];
         $nid=$_GET['update'];
-        $query="call update_note('".$note."')";
+        $query="call update_note('".$note."',".$nid.")";
         $res=pg_query($cn,$query);
         if($res)
         {
-         
+            header("Location:index.html");
         }else
         echo"didnt";
     }  
