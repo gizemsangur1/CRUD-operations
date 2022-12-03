@@ -1,0 +1,47 @@
+html,body{
+    max-width: 100%;
+    min-height: 100%;
+}
+/*Home page*/
+.row{
+    height: 100vh;
+}
+a:link{
+    text-decoration: none;
+}
+.create-note{
+    border-radius: 5px;
+    background-color: aqua;
+    object-fit: contain;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    font-size: 30px;
+    position: relative;
+    left: 35%;
+    top: 35%;
+}
+.notes{
+    border-radius: 5px;
+    background-color: aqua;
+    object-fit: contain;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    font-size: 30px;
+    position: relative;
+    left: 35%;
+    top: 35%;
+}
+/*taking note page*/
+#form{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+
+}
+#formcol{
+    height: 100vh;
+    
+}
+#note
