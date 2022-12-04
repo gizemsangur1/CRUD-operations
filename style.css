@@ -7,7 +7,7 @@ html,body{
 .row{
     height: 100vh;
 }
-a:link,a:visited{
+.a:link,.a:visited,.a:hover{
     text-decoration: none;
     color: black;
 }
@@ -44,7 +44,6 @@ a:link,a:visited{
 #form{
     position: absolute;
     left: 55%;
-
 }
 #formcol{
     height: 100vh;
@@ -137,4 +136,11 @@ textarea{
     left: 13%;
     top: 12%;
     width: 400px;
+}
+
+/*Notes page*/
+
+.heartbtn:link,.heartbtn:visited,.heartbtn:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
 }
